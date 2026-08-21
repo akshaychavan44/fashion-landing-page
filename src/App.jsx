@@ -7,6 +7,7 @@ import Products from "./components/Products";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import CartDrawer from "./components/CartDrawer";
+import CursorFollower from "./components/CursorFollower";
 
 export default function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -48,6 +49,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#FAF9F6] text-stone-800 font-sans antialiased flex flex-col">
+
+      {/* Custom Cursor */}
+      <CursorFollower />
 
       {/* Navbar */}
       <Navbar
